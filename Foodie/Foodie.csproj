@@ -1,0 +1,483 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6EC0E3DB-C96E-4D42-88CF-78DB6D98F449}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Foodie</RootNamespace>
+    <AssemblyName>Foodie</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Category.aspx" />
+    <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\Products.aspx" />
+    <Content Include="Admin\Users.aspx" />
+    <Content Include="assets\css\animate.css\css\animate.css" />
+    <Content Include="assets\css\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\css\jquery.mCustomScrollbar.css" />
+    <Content Include="assets\css\morris.js\css\morris.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\icon\icofont\css\icofont.css" />
+    <Content Include="assets\icon\icofont\fonts\icofont.svg" />
+    <Content Include="assets\icon\themify-icons\fonts\themify.svg" />
+    <Content Include="assets\icon\themify-icons\themify-icons.css" />
+    <Content Include="assets\images\auth\logo-dark.png" />
+    <Content Include="assets\images\auth\Logo-small-bottom.png" />
+    <Content Include="assets\images\auth\logo.png" />
+    <Content Include="assets\images\avatar-1.jpg" />
+    <Content Include="assets\images\avatar-2.jpg" />
+    <Content Include="assets\images\avatar-3.jpg" />
+    <Content Include="assets\images\avatar-4.jpg" />
+    <Content Include="assets\images\bg.jpg" />
+    <Content Include="assets\images\favicon.ico" />
+    <Content Include="assets\images\flags\ENGLISH.jpg" />
+    <Content Include="assets\images\flags\FRANCE.jpg" />
+    <Content Include="assets\images\flags\PORTO.jpg" />
+    <Content Include="assets\images\flags\SPAIN.jpg" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\mega-menu\01.jpg" />
+    <Content Include="assets\images\mega-menu\02.jpg" />
+    <Content Include="assets\images\mega-menu\03.jpg" />
+    <Content Include="assets\images\mega-menu\04.jpg" />
+    <Content Include="assets\images\mega-menu\05.jpg" />
+    <Content Include="assets\images\mega-menu\06.jpg" />
+    <Content Include="assets\images\pattern2.jpg" />
+    <Content Include="assets\images\user.png" />
+    <Content Include="assets\js\bootstrap-growl.min.js" />
+    <Content Include="assets\js\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\js\classie.js" />
+    <Content Include="assets\js\classie\classie.js" />
+    <Content Include="assets\js\common-pages.js" />
+    <Content Include="assets\js\demo-12.js" />
+    <Content Include="assets\js\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="assets\js\jquery-ui\jquery-ui.min.js" />
+    <Content Include="assets\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="assets\js\jquery.mousewheel.min.js" />
+    <Content Include="assets\js\jquery\jquery.min.js" />
+    <Content Include="assets\js\modernizr\css-scrollbars.js" />
+    <Content Include="assets\js\modernizr\modernizr.js" />
+    <Content Include="assets\js\morris.js\morris.js" />
+    <Content Include="assets\js\pcoded.min.js" />
+    <Content Include="assets\js\popper.js\popper.min.js" />
+    <Content Include="assets\js\raphael\raphael.min.js" />
+    <Content Include="assets\js\script.js" />
+    <Content Include="assets\js\script.min.js" />
+    <Content Include="assets\js\SmoothScroll.js" />
+    <Content Include="assets\pages\accordion\accordion.js" />
+    <Content Include="assets\pages\accordion\accordion.min.js" />
+    <Content Include="assets\pages\chart\morris\morris-custom-chart.js" />
+    <Content Include="assets\pages\dashboard\amchart\css\amchart.css" />
+    <Content Include="assets\pages\dashboard\amchart\css\export.css" />
+    <Content Include="assets\pages\dashboard\amchart\js\amcharts.js" />
+    <Content Include="assets\pages\dashboard\amchart\js\custom-amchart.js" />
+    <Content Include="assets\pages\dashboard\amchart\js\export.min.js" />
+    <Content Include="assets\pages\dashboard\amchart\js\images\dragIconRoundBig.svg" />
+    <Content Include="assets\pages\dashboard\amchart\js\images\dragIconRoundBigH.svg" />
+    <Content Include="assets\pages\dashboard\amchart\js\light.js" />
+    <Content Include="assets\pages\dashboard\amchart\js\serial.js" />
+    <Content Include="assets\pages\dashboard\custom-dashboard.js" />
+    <Content Include="assets\pages\google-maps\gmaps.min.js" />
+    <Content Include="assets\pages\google-maps\jquery.gmaps.js" />
+    <Content Include="assets\pages\icon-modal.js" />
+    <Content Include="assets\pages\notification\notification.css" />
+    <Content Include="assets\pages\notification\notification.js" />
+    <Content Include="assets\pages\todo\todo.js" />
+    <Content Include="assets\pages\widget\amchart\amcharts.js" />
+    <Content Include="assets\pages\widget\amchart\amcharts.min.js" />
+    <Content Include="assets\pages\widget\amchart\ammap.js" />
+    <Content Include="assets\pages\widget\amchart\ammap.min.js" />
+    <Content Include="assets\pages\widget\amchart\continentsLow.js" />
+    <Content Include="assets\pages\widget\amchart\continentsLow.min.js" />
+    <Content Include="assets\pages\widget\amchart\gauge.js" />
+    <Content Include="assets\pages\widget\amchart\gauge.min.js" />
+    <Content Include="assets\pages\widget\amchart\light.js" />
+    <Content Include="assets\pages\widget\amchart\light.min.js" />
+    <Content Include="assets\pages\widget\amchart\pie.js" />
+    <Content Include="assets\pages\widget\amchart\pie.min.js" />
+    <Content Include="assets\pages\widget\amchart\serial.js" />
+    <Content Include="assets\pages\widget\amchart\serial.min.js" />
+    <Content Include="assets\pages\widget\amchart\worldLow.js" />
+    <Content Include="assets\pages\widget\amchart\worldLow.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Category\01af6517-38e3-4fe0-8e89-4ef83ab10e0b.png" />
+    <Content Include="Images\Category\029d8df1-b81f-4141-91e7-9e8f62ce12aa.png" />
+    <Content Include="Images\Category\0905aaa1-f378-49cc-8230-63b5839628a6.png" />
+    <Content Include="Images\Category\0c01109d-c672-44e0-b4d4-1be26377a143.png" />
+    <Content Include="Images\Category\10300a79-5f9e-4a0d-95fb-3d370af0b7e7.jpg" />
+    <Content Include="Images\Category\12677948-21d4-4627-a027-333110b15040.png" />
+    <Content Include="Images\Category\16eea576-62c1-4085-b150-343c18b90fbf.png" />
+    <Content Include="Images\Category\174b3e9a-5843-4f3e-b11c-7f389f54f9cf.png" />
+    <Content Include="Images\Category\17cf4d67-9960-4e82-b4b8-5505b5eb375d.png" />
+    <Content Include="Images\Category\19a7385a-a7ea-4c30-9552-7c1bf681a0bd.png" />
+    <Content Include="Images\Category\238f35bf-ffe7-43d5-9f75-97d711b39d79.png" />
+    <Content Include="Images\Category\2dcaf54c-8765-464b-b766-3e00a43dbdf4.png" />
+    <Content Include="Images\Category\3c240aa6-895f-49a8-9b27-920caaee689f.png" />
+    <Content Include="Images\Category\40ed5095-ac13-4ca0-b601-53ba66b6977e.png" />
+    <Content Include="Images\Category\430e0027-65a1-4d19-be3d-8542053e6e36.png" />
+    <Content Include="Images\Category\4924c6d6-b6b7-44a9-82bf-7ed3df83da7c.png" />
+    <Content Include="Images\Category\4e71823f-b897-44e1-8b95-07d26cffd08d.png" />
+    <Content Include="Images\Category\4f1ee194-ecbc-4d13-8d59-a2243ff65ab5.png" />
+    <Content Include="Images\Category\55fdfc3e-bd78-40d2-9bb2-b4d24a845360.png" />
+    <Content Include="Images\Category\60bc84a1-4954-4af8-9fe3-3bf1ec5dc18a.png" />
+    <Content Include="Images\Category\60d96880-1b64-4e80-8abe-d7b3399ff905.png" />
+    <Content Include="Images\Category\62ff28f5-1f57-4a8f-90b7-7ca11c25cac6.png" />
+    <Content Include="Images\Category\6e448bd6-1316-47e6-a246-3ea9312e1ba7.png" />
+    <Content Include="Images\Category\6efc5909-b154-4da7-a58f-5b26fa33d0fa.png" />
+    <Content Include="Images\Category\707c135b-8efc-4a48-aa17-674ed5dcc333.png" />
+    <Content Include="Images\Category\7e1e8849-c2da-437a-b52d-1a76adf92af8.png" />
+    <Content Include="Images\Category\8114a728-f1df-495c-9abe-bded29c850d3.png" />
+    <Content Include="Images\Category\82d16c72-f965-4727-b4b9-89361184ece9.png" />
+    <Content Include="Images\Category\84f0fc43-9266-4fd7-8894-03d0a907dee1.png" />
+    <Content Include="Images\Category\86ab33e3-7eb2-4c42-b240-e590243d6a56.png" />
+    <Content Include="Images\Category\880c329a-bf49-4cbe-a162-59184df850f3.png" />
+    <Content Include="Images\Category\94ed380c-63b9-494c-9bf6-89598ca53ec3.png" />
+    <Content Include="Images\Category\9eabc498-e1ec-4091-b857-298d339d85d7.png" />
+    <Content Include="Images\Category\9f580b37-392c-4822-959e-c8ad626f085e.png" />
+    <Content Include="Images\Category\a87a5f90-7cf1-4365-9341-afad8eb5e0e2.png" />
+    <Content Include="Images\Category\a8d7df1c-192e-40fb-b093-92150ef34122.png" />
+    <Content Include="Images\Category\ab28feaf-504d-417f-bc9f-d3b506025fc1.png" />
+    <Content Include="Images\Category\b3a130da-0a7b-46c2-877e-ac68263eeb30.png" />
+    <Content Include="Images\Category\b84c90cc-a808-41a5-959a-f2a926dd940a.png" />
+    <Content Include="Images\Category\ba3a44f1-22ab-4d6f-99df-614362cc59da.png" />
+    <Content Include="Images\Category\bd4967c2-95ee-4bcd-a091-98992927627e.png" />
+    <Content Include="Images\Category\bdbc69cf-8150-4ce4-b9f5-580f76721e4b.png" />
+    <Content Include="Images\Category\c15637a8-e954-4bb4-9855-0fef17028b6d.png" />
+    <Content Include="Images\Category\c2edc18a-9f71-48fc-a9f2-602a13ab158f.png" />
+    <Content Include="Images\Category\c4ebd798-7dd9-4c10-9155-778dfc96e8cb.png" />
+    <Content Include="Images\Category\ce05f2b0-f544-4fc9-8a7a-bbb59c2122f2.png" />
+    <Content Include="Images\Category\d90b6fd7-0235-4189-97b6-0bbbbd30ea25.png" />
+    <Content Include="Images\Category\d9599662-8b8a-4e04-b9fc-d1f892f862a9.png" />
+    <Content Include="Images\Category\e0eb3481-798b-4049-bf23-d77b5ec3668a.png" />
+    <Content Include="Images\Category\e1ed4621-3a7c-4309-875e-9cb5811444f3.jpg" />
+    <Content Include="Images\Category\e4d67fcc-62d0-4a77-bc32-d7362bbd3e3b.png" />
+    <Content Include="Images\Category\ea4f7a39-954a-4ddc-ab37-a127ab5622cf.png" />
+    <Content Include="Images\Category\ef116028-5dfb-4a16-a99f-f1b90e772734.png" />
+    <Content Include="Images\Category\f0d68dfd-1ff6-4a65-b48c-486c46fa466f.png" />
+    <Content Include="Images\Category\f246c056-6a4f-4f5e-9ab9-6c53fee8afd3.png" />
+    <Content Include="Images\Category\f4fb20fd-a637-4d02-bf47-84b309b8f1e1.png" />
+    <Content Include="Images\Category\f5b0d020-42e1-46a7-a703-c5b6c17f2d0a.png" />
+    <Content Include="Images\Category\fadc86c3-372a-4a1a-917c-79baeecb7a6c.png" />
+    <Content Include="Images\chicken.jpg" />
+    <Content Include="Images\hambuger.png" />
+    <Content Include="Images\khoai tay.png" />
+    <Content Include="Images\login.png" />
+    <Content Include="Images\Pizza.png" />
+    <Content Include="Images\Pizzas.png" />
+    <Content Include="Images\Product\01b1c49a-2a0e-4ffc-9719-493237adc50d.png" />
+    <Content Include="Images\Product\02da1c12-4e3b-4e39-9aba-29e042c3cb13.png" />
+    <Content Include="Images\Product\05ba2d44-f9ca-4e02-823e-7101032226d3.png" />
+    <Content Include="Images\Product\08024d7d-8976-4104-9423-b37be92011a6.png" />
+    <Content Include="Images\Product\0a64171d-905a-4f09-8b6c-ce0f443c3fff.png" />
+    <Content Include="Images\Product\0b45c32b-f7d9-4465-a717-e996858dc424.png" />
+    <Content Include="Images\Product\0c544c44-58cd-4986-b584-64b196bcfded.png" />
+    <Content Include="Images\Product\0e22997e-bf49-4c35-ae49-98dfde3e6c01.png" />
+    <Content Include="Images\Product\0f04d73f-2675-4287-b02c-6a103b4546c0.png" />
+    <Content Include="Images\Product\1f6a3efd-4a94-46cd-89b1-a9d5e5345d17.png" />
+    <Content Include="Images\Product\245f25ad-ba72-41a8-8c60-4f49077f137a.png" />
+    <Content Include="Images\Product\445e9f30-c70d-4cca-b819-b2cfb1802eae.png" />
+    <Content Include="Images\Product\45c59fd8-a82d-4ecd-92a5-6fcdd71bec6c.png" />
+    <Content Include="Images\Product\46fe672e-f576-49d7-b4b3-ffd97783d442.png" />
+    <Content Include="Images\Product\473d9850-3a1a-4b13-b665-045564fb1635.png" />
+    <Content Include="Images\Product\491ebe18-2dfe-4e32-b02e-773c17271411.png" />
+    <Content Include="Images\Product\4aad05de-4cfd-4ede-890f-99179d06d379.png" />
+    <Content Include="Images\Product\4d77a3a2-cce0-425f-b190-e76233d4fb7d.png" />
+    <Content Include="Images\Product\56130a4b-326c-4c99-8c53-dddc133e8a5f.png" />
+    <Content Include="Images\Product\573bdf1a-8fa8-4955-8fd8-c7971fac3a8e.png" />
+    <Content Include="Images\Product\5f6b0f88-c507-4541-b0c9-cc1c7359b920.png" />
+    <Content Include="Images\Product\78fe9483-b91c-41a2-a07f-0c6fbf8ee175.png" />
+    <Content Include="Images\Product\93dadd1c-b5f0-42c6-b826-e453767b4611.png" />
+    <Content Include="Images\Product\a1eb7efa-351c-44dc-9ad7-51e1a31afbf0.png" />
+    <Content Include="Images\Product\a2295c9b-c84b-4d2c-a1c9-1d429d825e7b.png" />
+    <Content Include="Images\Product\a416ba3a-c588-4d2e-bdf9-aae9cebacc92.png" />
+    <Content Include="Images\Product\a8790af9-c37d-4ec0-a708-6eb32bed7463.png" />
+    <Content Include="Images\Product\ace0de33-8792-48b2-b14c-42764e698882.png" />
+    <Content Include="Images\Product\acef1104-f1bd-403b-9e86-56f47ece1137.png" />
+    <Content Include="Images\Product\b57fce22-6a31-4bf9-8d55-99b41a8a04a6.png" />
+    <Content Include="Images\Product\b62f2749-b30b-4025-a8a2-39a0567c8af7.png" />
+    <Content Include="Images\Product\b9e99650-f91f-4a10-99fe-f5ca9e6f4c78.png" />
+    <Content Include="Images\Product\bd460e47-7b35-4d00-aaa7-74061e418ba3.png" />
+    <Content Include="Images\Product\bed486f8-9fbc-41d3-8df6-e4ecd4aacc28.png" />
+    <Content Include="Images\Product\bfd0b48e-bc2e-4b93-a713-5ce322179a1c.png" />
+    <Content Include="Images\Product\bfde233f-e4a6-4860-ae58-7062283b8a08.png" />
+    <Content Include="Images\Product\c6114335-e8fa-4836-8a1e-8554e105898f.png" />
+    <Content Include="Images\Product\d361a8e6-381f-45a1-9ecb-b73043936962.png" />
+    <Content Include="Images\Product\dc756788-da6a-417e-886f-76e320c72232.png" />
+    <Content Include="Images\Product\e2c8ee9b-fb57-4a1e-b6d2-28b9ab328763.png" />
+    <Content Include="Images\Product\e4ee2874-59b0-4594-8724-5416425c35e7.png" />
+    <Content Include="Images\Product\f00104ff-b084-48a4-93ca-959a7e71826d.png" />
+    <Content Include="Images\Product\fc6e915f-076a-4925-9018-f3c57ad50669.png" />
+    <Content Include="Images\User\29e0123c-0f88-4135-af63-ba20462a77a0.jpg" />
+    <Content Include="Images\User\2c785a4b-06cb-4ea4-9a02-793b4fcf5d8f.jpg" />
+    <Content Include="Images\User\5316ffbb-175e-45e6-bcc2-9ceb5149c157.jpg" />
+    <Content Include="Images\User\73d44fc4-eb75-4ab5-9e30-49df1f032cbd.jpg" />
+    <Content Include="TemplateFiles\css\bootstrap.css" />
+    <Content Include="TemplateFiles\css\font-awesome.min.css" />
+    <Content Include="TemplateFiles\css\responsive.css" />
+    <Content Include="TemplateFiles\css\style.css" />
+    <Content Include="TemplateFiles\images\about-img.png" />
+    <Content Include="TemplateFiles\images\bg_1.jpg" />
+    <Content Include="TemplateFiles\images\bg_2.jpg" />
+    <Content Include="TemplateFiles\images\bg_3.jpg" />
+    <Content Include="TemplateFiles\images\category.jpg" />
+    <Content Include="TemplateFiles\images\client1.jpg" />
+    <Content Include="TemplateFiles\images\client2.jpg" />
+    <Content Include="TemplateFiles\images\favicon.png" />
+    <Content Include="TemplateFiles\images\image_1.jpg" />
+    <Content Include="TemplateFiles\images\image_2.jpg" />
+    <Content Include="TemplateFiles\images\image_4.jpg" />
+    <Content Include="TemplateFiles\images\image_5.jpg" />
+    <Content Include="TemplateFiles\images\image_6.jpg" />
+    <Content Include="TemplateFiles\images\product-1.jpg" />
+    <Content Include="TemplateFiles\images\product-10.jpg" />
+    <Content Include="TemplateFiles\images\product-11.jpg" />
+    <Content Include="TemplateFiles\images\product-12.jpg" />
+    <Content Include="TemplateFiles\images\product-2.jpg" />
+    <Content Include="TemplateFiles\images\product-3.jpg" />
+    <Content Include="TemplateFiles\images\product-4.jpg" />
+    <Content Include="TemplateFiles\images\product-5.jpg" />
+    <Content Include="TemplateFiles\images\product-6.jpg" />
+    <Content Include="TemplateFiles\images\product-7.jpg" />
+    <Content Include="TemplateFiles\images\product-8.jpg" />
+    <Content Include="TemplateFiles\images\product-9.jpg" />
+    <Content Include="TemplateFiles\js\bootstrap.js" />
+    <Content Include="TemplateFiles\js\custom.js" />
+    <Content Include="TemplateFiles\js\jquery-3.4.1.min.js" />
+    <Content Include="User\About.aspx" />
+    <Content Include="User\Contact.aspx" />
+    <Content Include="User\Default.aspx" />
+    <Content Include="User\Login.aspx" />
+    <Content Include="User\Menu.aspx" />
+    <Content Include="User\Profile.aspx" />
+    <Content Include="User\Registration.aspx" />
+    <Content Include="User\SliderUserControl.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\SliderUserControl.ascx.cs">
+      <DependentUpon>SliderUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\SliderUserControl.ascx.designer.cs">
+      <DependentUpon>SliderUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Admin.Master" />
+    <Content Include="assets\icon\icofont\fonts\icofont.eot" />
+    <Content Include="assets\icon\icofont\fonts\icofont.ttf" />
+    <Content Include="assets\icon\icofont\fonts\icofont.woff" />
+    <Content Include="assets\icon\themify-icons\fonts\themify.eot" />
+    <Content Include="assets\icon\themify-icons\fonts\themify.ttf" />
+    <Content Include="assets\icon\themify-icons\fonts\themify.woff" />
+    <None Include="packages.config" />
+    <Content Include="TemplateFiles\css\style.css.map" />
+    <Content Include="TemplateFiles\css\style.scss" />
+    <Content Include="TemplateFiles\fonts\fontawesome-webfont.ttf" />
+    <Content Include="TemplateFiles\fonts\fontawesome-webfont.woff" />
+    <Content Include="TemplateFiles\fonts\fontawesome-webfont.woff2" />
+    <Content Include="User\User.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62277</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62277/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
