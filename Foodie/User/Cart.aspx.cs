@@ -38,14 +38,14 @@ namespace Foodie.User
         {
             con = new SqlConnection(Connection.GetConnectionString());
             cmd = new SqlCommand("Cart_Crud", con);
-            cmd.Parameters.AddWithValue("@Action", "GETBYID");
+            cmd.Parameters.AddWithValue("@Action", "SELECT");
             cmd.Parameters.AddWithValue("@UserId", Session["userId"]);
             cmd.CommandType = CommandType.StoredProcedure;
             sda = new SqlDataAdapter(cmd);
             dt = new DataTable();
             sda.Fill(dt);
             rCartItem.DataSource = dt;
-            if (dt.Rows.Count > 0)
+            if (dt.Rows.Count == 0)
             {
                 rCartItem.FooterTemplate = null;
                 rCartItem.FooterTemplate = new CustomTemplate(ListItemType.Footer);
@@ -189,6 +189,6 @@ namespace Foodie.User
                     container.Controls.Add(footer);
                 }
             }
-        }
+        }      
     }
 }

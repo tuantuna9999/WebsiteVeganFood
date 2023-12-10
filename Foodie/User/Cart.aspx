@@ -40,7 +40,7 @@
                             <asp:Label ID="lblName" runat="server" Text='<%# Eval("Name") %>'></asp:Label>
                         </td>
                         <td>
-                            <img width="60" src="<%# Utils.GetImageUrl(Eval("ImagrUrl"))%>" alt="" />
+                            <img width="60" src="<%# Utils.GetImageUrl(Eval("ImageUrl"))%>" alt="" />
                         </td>
                         <td>
                             <asp:Label ID="lblPrice" runat="server" Text='<%# Eval("Price") %>'></asp:Label>
@@ -52,11 +52,10 @@
                             <div class="product__details__option">
                                 <div class="quantity">
                                     <div class="pro-qty">
-                                        <asp:TextBox ID="txtQuantity" runat="server" TextMode="Number" Text='<%# Eval("Quantity") %>
-                                        </asp:TextBox>
-                                        <asp:RegularExpressionValidator ID="revQuantity" runat="server" ErrorMessage="*" ForeColor="Red"
-                                            Font-Size="Small" ValidationExpression="[1-9]*" ControlToValidate="txtQuantity"
-                                            Display="Dynamic" SetFocusOnError="true" EnableClientScript="true"></asp:RegularExpressionValidator>
+                                        <asp:TextBox ID="txtQuantity" runat="server" TextMode="Number" Text='<%# Eval("Quantity") %>'></asp:TextBox>                                    
+                                       <%-- <asp:RegularExpressionValidator ID="revQuantity" runat="server" ErrorMessage="*" ForeColor="Red"
+                                           Font-Size="Small" ValidationExpression="[1-9]*" ControlToValidate="txtQuantity"
+                                            Display="Dynamic" SetFocusOnError="true" EnableClientScript="true"></asp:RegularExpressionValidator>--%>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +97,6 @@
                         <td>
                             <asp:LinkButton ID="lbCheckout" runat="server" CommandName="checkout" CssClass="btn btn-success">
                                 Checkout<i class="fa fa-arrow-circle-right ml-2"></i>
-
                             </asp:LinkButton>
                         </td>
                     </tr>

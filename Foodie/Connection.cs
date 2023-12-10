@@ -67,6 +67,7 @@ namespace Foodie
             }
             catch (Exception ex)
             {
+                isUpdated = false;
                 System.Web.HttpContext.Current.Response.Write("<scrip>alert('Error - " + ex.Message + "');<script>");
 
             }
