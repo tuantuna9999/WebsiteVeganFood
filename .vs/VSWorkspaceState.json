@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Foodie",
+    "\\Foodie\\User",
+    "\\packages"
   ],
-  "SelectedNode": "\\Foodie.sln",
+  "SelectedNode": "\\Foodie\\User\\Payment.aspx",
   "PreviewInSolutionExplorer": false
 }
