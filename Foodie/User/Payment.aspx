@@ -1,4 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.Master" AutoEventWireup="true" CodeBehind="Payment.aspx.cs" Inherits="Foodie.User.Payment" %>
+
+<script runat="server">
+
+    protected void lbCardSubmit_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void lbCardSubmit_Click1(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .rounded{
