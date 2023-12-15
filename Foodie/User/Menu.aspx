@@ -9,11 +9,12 @@
     <section class="food_section layout_padding">
         <div class="container">
             <div class="heading_container heading_center">
-                <div class="align-self-end">
-                      <asp:Label ID="lblMsg" runat="server" Visible="false"></asp:Label>
+                 <div class="align-self-end">
+                    <asp:Label ID="lblMsg" runat="server" Visible="false"></asp:Label>
                 </div>
-                <h2>Our Menu
-                </h2>
+                  <h2>
+                   Menu 
+                 </h2>
             </div>
 
             <ul class="filters_menu">
@@ -37,12 +38,12 @@
                                             <img src="<%# Utils.GetImageUrl(Eval("ImageUrl")) %>" alt="">
                                         </div>
                                         <div class="detail-box">
-                                            <h5><%# Eval("Name") %> </h5>
+                                            <h5>Tên: <%# Eval("Name") %> </h5>
                                             <p>
-                                                <%# Eval("Description") %>
+                                               <h5>Mô Tả: <%# Eval("Description") %></h5>
                                             </p>
                                             <div class="options">
-                                                <h6><%# Eval("Price") %> VNĐ</h6>
+                                                <h6>Giá: <%# Eval("Price") %> VNĐ</h6>
                                                 <asp:LinkButton ID="lblAddToCart" CommandName="addToCart" CommandArgument='<%# Eval("ProductId") %>' runat="server">
                                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background: new 0 0 456.029 456.029;" xml:space="preserve">
                                                         <g>

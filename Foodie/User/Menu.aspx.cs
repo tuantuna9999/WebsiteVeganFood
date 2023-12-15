@@ -49,7 +49,7 @@ namespace Foodie.User
             rProducts.DataBind();
         }
 
-        protected void rProducts_ItemCommand(object sender, CommandEventArgs e)
+        protected void rProducts_ItemCommand(object sender, RepeaterCommandEventArgs e)
         {
             if (Session["userId"] != null)
             {
@@ -87,8 +87,8 @@ namespace Foodie.User
 
                 }
                 lblMsg.Visible = true;
-                lblMsg.Text = "Item added susccessfully in your cart!";
-                lblMsg.CssClass = "alert alert-success";
+                lblMsg.Text = "Sản Phẩm Đã Được Thêm Vào Giỏ Hàng Của Bạn!";
+                lblMsg.CssClass = "Thêm Thành Công";
                 Response.AddHeader("REFRESH", "1;URL=Cart.aspx");
 
             }
@@ -96,26 +96,27 @@ namespace Foodie.User
             {
                 Response.Redirect("Login.aspx");
             }
-        }
 
-        int isItemExistInCart(int productId)
-        {
-            con = new SqlConnection(Connection.GetConnectionString());
-            cmd = new SqlCommand("Cart_Crud", con);
-            cmd.Parameters.AddWithValue("@Action", "GETBYID");
-            cmd.Parameters.AddWithValue("@ProductId", productId);
-            cmd.Parameters.AddWithValue("@UserId", Session["userId"]);
-            //cmd.Parameters.AddWithValue("@Action", Session["userId"]);
-            cmd.CommandType = CommandType.StoredProcedure;
-            sda = new SqlDataAdapter(cmd);
-            dt = new DataTable();
-            sda.Fill(dt);
-            int quantity = 0;
-            if (dt.Rows.Count > 0)
+            int isItemExistInCart(int productId)
             {
-                quantity = Convert.ToInt32(dt.Rows[0]["Quantity"]);
+                con = new SqlConnection(Connection.GetConnectionString());
+                cmd = new SqlCommand("Cart_Crud", con);
+                cmd.Parameters.AddWithValue("@Action", "GETBYID");
+                cmd.Parameters.AddWithValue("@ProductId", productId);
+                cmd.Parameters.AddWithValue("@UserId", Session["userId"]);
+                //cmd.Parameters.AddWithValue("@Action", Session["userId"]);
+                cmd.CommandType = CommandType.StoredProcedure;
+                sda = new SqlDataAdapter(cmd);
+                dt = new DataTable();
+                sda.Fill(dt);
+                int quantity = 0;
+                if (dt.Rows.Count > 0)
+                {
+                    quantity = Convert.ToInt32(dt.Rows[0]["Quantity"]);
+                }
+                return quantity;
             }
-            return quantity;
+
         }
 
         //public string LowerCase(object obj)
@@ -123,4 +124,4 @@ namespace Foodie.User
         //    return obj.ToString().ToLower();
         //}
     }
-    }
+}
