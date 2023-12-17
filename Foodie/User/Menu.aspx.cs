@@ -104,7 +104,6 @@ namespace Foodie.User
                 cmd.Parameters.AddWithValue("@Action", "GETBYID");
                 cmd.Parameters.AddWithValue("@ProductId", productId);
                 cmd.Parameters.AddWithValue("@UserId", Session["userId"]);
-                //cmd.Parameters.AddWithValue("@Action", Session["userId"]);
                 cmd.CommandType = CommandType.StoredProcedure;
                 sda = new SqlDataAdapter(cmd);
                 dt = new DataTable();

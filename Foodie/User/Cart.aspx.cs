@@ -1,8 +1,7 @@
-﻿using Foodie.Admin;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -17,7 +16,6 @@ namespace Foodie.User
         SqlDataAdapter sda;
         DataTable dt;
         decimal grandTotal = 0;
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -29,12 +27,13 @@ namespace Foodie.User
                 }
                 else
                 {
-                    getCartItem();
+                    getCartItems();
                 }
             }
 
         }
-        void getCartItem()
+
+        void getCartItems()
         {
             con = new SqlConnection(Connection.GetConnectionString());
             cmd = new SqlCommand("Cart_Crud", con);
@@ -68,7 +67,7 @@ namespace Foodie.User
                 {
                     con.Open();
                     cmd.ExecuteNonQuery();
-                    getCartItem();
+                    getCartItems();
                     //Cart count
                     Session["cartCount"] = utils.cartCount(Convert.ToInt32(Session["userId"]));
                 }
@@ -82,6 +81,7 @@ namespace Foodie.User
                     con.Close();
                 }
             }
+
             if (e.CommandName == "updateCart")
             {
                 bool isCartUpdated = false;
@@ -109,14 +109,13 @@ namespace Foodie.User
                         }
                         if (isTrue)
                         {
-                            isCartUpdated = utils.updateCartQuantity(updatedQuantity, ProductId, Convert.ToInt32(Session["useId"]));
+                            isCartUpdated = utils.updateCartQuantity(updatedQuantity, ProductId, Convert.ToInt32(Session["userId"]));
 
                         }
                     }
                 }
-                getCartItem();
+                getCartItems();
             }
-
             if (e.CommandName == "checkout")
             {
                 bool isTrue = false;
@@ -128,7 +127,7 @@ namespace Foodie.User
                     {
                         HiddenField _productId = rCartItem.Items[item].FindControl("hdnProductId") as HiddenField;
                         HiddenField _cartQuantity = rCartItem.Items[item].FindControl("hdnQuantity") as HiddenField;
-                        HiddenField _productQuantity = rCartItem.Items[item].FindControl("hdnPrQuantity") as HiddenField;
+                        HiddenField _productQuantity = rCartItem.Items[item].FindControl("hdnPrdQuantity") as HiddenField;
                         Label productName = rCartItem.Items[item].FindControl("lblName") as Label;
                         int productId = Convert.ToInt32(_productId.Value);
                         int cartQuantity = Convert.ToInt32(_cartQuantity.Value);
@@ -140,7 +139,7 @@ namespace Foodie.User
                         }
                         else
                         {
-                            isTrue = true;
+                            isTrue = false;
                             pName = productName.Text.ToString();
                             break;
                         }
@@ -153,12 +152,14 @@ namespace Foodie.User
                 else
                 {
                     lblMsg.Visible = true;
-                    lblMsg.Text = "Item <b>'" + pName + "'</b> is out of stock:(";
+                    lblMsg.Text = "Sản phẩm <b>'" + pName + "'</b> đã hết hàng:(";
                     lblMsg.CssClass = "alert alert-warning";
                 }
+
             }
 
         }
+
         protected void rCartItem_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
@@ -172,6 +173,7 @@ namespace Foodie.User
             }
             Session["grandTotalPrice"] = grandTotal;
         }
+
         private sealed class CustomTemplate : ITemplate
         {
             private ListItemType ListItemType { get; set; }
@@ -189,6 +191,6 @@ namespace Foodie.User
                     container.Controls.Add(footer);
                 }
             }
-        }      
+        }
     }
 }

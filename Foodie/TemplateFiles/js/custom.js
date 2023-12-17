@@ -97,7 +97,7 @@ $(".client_owl-carousel").owlCarousel({
 });
 //'use strict';
 
-(funtion($){
+(function($){
     /*--Quantity change*/
     var proQty = $('.pro-qty');
     proQty.prepend('<span class="dec qtybtn" >-</span>');
