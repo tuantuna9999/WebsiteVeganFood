@@ -44,6 +44,9 @@
                                />
                             <span class="pl-3 text-info">Bạn chưa có tài khoản? <a href="Registration.aspx" class="badge badge-info"> Đăng ký tại đây!</a></span>
                         </div>
+                        </div>
+                            <span class="pl-3 text-info">Quên mật khẩu? <a href="ForgetPassword.aspx" class="badge badge-info"> Quên mật khẩu!</a></span>
+                        </div>
                     </div>
                 </div>
             </div>
