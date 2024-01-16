@@ -14,7 +14,7 @@ namespace Foodie
     {
         public static string GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings["cs"].ConnectionString; 
+            return ConfigurationManager.ConnectionStrings["cs"].ConnectionString;
         }
     }
     public class Utils
@@ -26,7 +26,7 @@ namespace Foodie
         {
             bool isValid = false;
             string[] fileExtension = { ".jpg", ".png", ".jpeg" };
-            for(int i =0; i<=fileExtension.Length-1;i++)
+            for (int i = 0; i <= fileExtension.Length - 1; i++)
             {
                 if (fileName.Contains(fileExtension[i]))
                 {
@@ -49,6 +49,7 @@ namespace Foodie
             }
             return url1;
         }
+
         public bool updateCartQuantity(int quantity, int productId, int userId)
         {
             bool isUpdated = false;
@@ -89,7 +90,6 @@ namespace Foodie
             sda.Fill(dt);
             return dt.Rows.Count;
         }
-
         public static string GetUniqueId()
         {
             Guid guid = Guid.NewGuid();
@@ -99,4 +99,3 @@ namespace Foodie
 
     }
 }
-    
