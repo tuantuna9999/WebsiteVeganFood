@@ -10,14 +10,14 @@
             <div class="col-md-7 col-lg-6 ">
               <div class="detail-box">
                 <h1>
-                  Fast Food Restaurant
+                  Vegan Food
                 </h1>
                 <p>
-                  Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                 “Top 100 Sản phẩm tốt nhất cho gia đình, trẻ em” lần thứ 6 với sản phẩm bột nêm, nước chấm do báo Lao động và Xã hội, báo điện tử Dân sinh phối hợp với Tạp chí Gia đình và Trẻ em năm 2023. 
                 </p>
                 <div class="btn-box">
                   <a href="" class="btn1">
-                    Order Now
+                    Đặt Ngay
                   </a>
                 </div>
               </div>
@@ -31,14 +31,14 @@
             <div class="col-md-7 col-lg-6 ">
               <div class="detail-box">
                 <h1>
-                  Fast Food Restaurant
+                   Vegan Food
                 </h1>
                 <p>
-                  Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                  “Top 100 Sản phẩm tốt nhất cho gia đình, trẻ em” lần thứ 6 với sản phẩm bột nêm, nước chấm do báo Lao động và Xã hội, báo điện tử Dân sinh phối hợp với Tạp chí Gia đình và Trẻ em năm 2023. 
                 </p>
                 <div class="btn-box">
                   <a href="" class="btn1">
-                    Order Now
+                   Đặt Ngay
                   </a>
                 </div>
               </div>
@@ -52,14 +52,14 @@
             <div class="col-md-7 col-lg-6 ">
               <div class="detail-box">
                 <h1>
-                  Fast Food Restaurant
+                  Vegan Food
                 </h1>
                 <p>
-                  Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                  “Top 100 Sản phẩm tốt nhất cho gia đình, trẻ em” lần thứ 6 với sản phẩm bột nêm, nước chấm do báo Lao động và Xã hội, báo điện tử Dân sinh phối hợp với Tạp chí Gia đình và Trẻ em năm 2023.
                 </p>
                 <div class="btn-box">
                   <a href="" class="btn1">
-                    Order Now
+                    Đặt Ngay
                   </a>
                 </div>
               </div>

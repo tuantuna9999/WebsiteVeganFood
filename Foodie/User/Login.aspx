@@ -17,7 +17,7 @@
                 <div class="align-self-end">
                     <asp:Label runat="server" ID="lblmsg"></asp:Label>
                 </div>
-                <h2>Login</h2>
+                <h2>Đăng Nhập</h2>
             </div>
             <div class="row">
                 <div class="col-md-6">

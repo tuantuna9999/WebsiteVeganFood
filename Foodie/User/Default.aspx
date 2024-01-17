@@ -27,7 +27,7 @@
                   <span>20%</span> Off
                 </h6>
                 <a href="Menu.aspx?id=<%#Eval("CategoryId") %>">
-                  Order Now 
+                  Đặt Ngay
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                     <g>
                       <g>
@@ -86,8 +86,6 @@
           </div>
                 </ItemTemplate>
             </asp:Repeater>
-          
-         
         </div>
       </div>
     </div>
@@ -111,17 +109,17 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                We Are Feane
+               Vegan Food
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+            Nhờ lòng đam mê và tận tâm không ngừng, đội ngũ Loving Vegan đã tạo ra những sản phẩm thuần chay đáp ứng các tiêu chí về chất lượng và an toàn cho sức khỏe 
+            của khách hàng. Chúng tôi luôn đặt mục tiêu “Chăm sóc khách hàng như chính bản thân mình và những người thân yêu”, vì chúng tôi tin rằng một lối sống thuần 
+            chay là chìa khóa cho sức khỏe và hạnh phúc bền vững. Loving Vegan tin tưởng rằng, qua từng sản phẩm mà chúng tôi mang đến, Loving Vegan có thể thực sự 
+            chạm đến trái tim và tạo nên sự kết nối đặc biệt với mỗi khách hàng, như những người thân thương trong gia đình.
             </p>
             <a href="">
-              Read More
+              Đọc Thêm...
             </a>
           </div>
         </div>
@@ -138,7 +136,7 @@
     <div class="container">
       <div class="heading_container heading_center psudo_white_primary mb_45">
         <h2>
-          What Says Our Customers
+          Khách Hàng Của Chúng Tôi Nói Gì
         </h2>
       </div>
       <div class="carousel-wrap row ">
@@ -147,17 +145,16 @@
             <div class="box">
               <div class="detail-box">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                  Tôi rất ấn tượng với hương vị của sản phẩm này. Nó mang lại một sự phong phú và tươi mới,
+                  tôi hài lòng với sản phẩm chay này. Nó không chỉ đáp ứng mong đợi về hương vị và chất lượng, mà còn mang lại giá trị dinh dưỡng cao và tuân thủ các nguyên tắc bảo vệ môi trường. 
+                   Tôi sẽ tiếp tục ủng hộ và khuyên bạn bè của mình nên thử nó."
                 </p>
                 <h6>
-                  Moana Michell
+                  Phương Tuấn
                 </h6>
-                <p>
-                  magna aliqua
-                </p>
               </div>
               <div class="img-box">
-                <img src="../TemplateFiles/images/client1.jpg" alt="" class="box-img">
+                <img src="../TemplateFiles/images/j97.jpg" alt="" class="box-img">
               </div>
             </div>
           </div>
@@ -165,17 +162,15 @@
             <div class="box">
               <div class="detail-box">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                  Tôi rất hài lòng vì sản phẩm này tuân thủ các tiêu chuẩn môi trường và đạo đức. Nó được đóng gói bằng vật liệu tái chế và không gây tác động tiêu cực đến môi trường.
+                   Điều này rất quan trọng đối với tôi, vì tôi muốn ủng hộ những công ty có tầm nhìn bền vững và đóng góp tích cực cho mọi người.
                 </p>
                 <h6>
-                  Mike Hamell
+                  Văn Hiếu
                 </h6>
-                <p>
-                  magna aliqua
-                </p>
               </div>
               <div class="img-box">
-                <img src="../TemplateFiles/images/client2.jpg" alt="" class="box-img">
+                <img src="../TemplateFiles/images/ht2.jpg" alt="" class="box-img">
               </div>
             </div>
           </div>

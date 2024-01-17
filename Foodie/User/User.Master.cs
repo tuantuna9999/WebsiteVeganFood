@@ -11,7 +11,7 @@ namespace Foodie.User
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!Request.Url.AbsoluteUri.ToString().Contains("Default.aspx"))
+            if (!Request.Url.AbsoluteUri.ToString().Contains("Default.aspx"))
             {
                 form1.Attributes.Add("class", "sub_page");
             }
@@ -26,22 +26,23 @@ namespace Foodie.User
                 //add the control to the panel
                 pnlSliderUC.Controls.Add(sliderUserControl);
             }
-            if (Session["userId"]!=null)
+            if (Session["userId"] != null)
             {
-                lblLoginOrLogout.Text = "Logout";
+                lblLoginOrLogout.Text = "Đăng Xuất";
                 Utils utils = new Utils();
-                Session["cartCount"] = utils.cartCount(Convert.ToInt32(Session["userId"])).ToString();
+                Session["cartCount"] = utils.cartCount(Convert.ToInt32(Session["userID"])).ToString();
+
             }
             else
             {
-                lblLoginOrLogout.Text = "Login";
+                lblLoginOrLogout.Text = "Đăng Nhập";
                 Session["cartCount"] = "0";
             }
         }
 
         protected void lblLoginOrLogout_Click(object sender, EventArgs e)
         {
-            if (Session["userId"]==null)
+            if (Session["userId"] == null)
             {
                 Response.Redirect("Login.aspx");
             }
@@ -54,7 +55,7 @@ namespace Foodie.User
 
         protected void lbRegisterOrProfile_Click(object sender, EventArgs e)
         {
-            if (Session["userId"]!= null)
+            if (Session["userId"] != null)
             {
                 lbRegisterOrProfile.ToolTip = "Thông tin cá nhân";
                 Response.Redirect("Profile.aspx");

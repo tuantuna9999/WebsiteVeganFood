@@ -40,35 +40,30 @@
                                 <div class="card-block">
                                     <div class="row">
                                         <div class="col-sm-6 col-md-4 col-lg-4">
-                                            <h4 class="sub-title">Category</h4>
+                                            <h4 class="sub-title">Danh Mục</h4>
                                             <div>
 
                                                 <div class="form-group">
-                                                    <label>Tên món</label>
+                                                    <label>Tên Danh Mục</label>
                                                     <div>
-                                                        <asp:TextBox ID="txtName" runat="server" CssClass="form-control" placeholder="Vui lòng nhập tên món!" required>
+                                                        <asp:TextBox ID="txtName" runat="server" CssClass="form-control" placeholder="Vui lòng nhập tên danh mục!" required>
                                                         </asp:TextBox>
                                                         <asp:HiddenField ID="hdnId" runat="server" Value="0" />
                                                     </div>
                                                 </div>
-
-
                                                 <div class="form-group">
                                                     <label>Hình ảnh</label>
                                                     <div>
                                                         <asp:FileUpload ID="fuCategoryImage" runat="server" CssClass="form-control" onchange="ImagePreview(this);" />
                                                     </div>
                                                 </div>
-
                                                 <div class="form-check pl-4">
-
                                                     <asp:CheckBox ID="cbIsActive" runat="server" Text=" &nbsp; IsActive" CssClass="form-check-input"></asp:CheckBox>
-
                                                 </div>
                                                 <div class="pb-5">
                                                     <asp:Button ID="btnAddOrUpdate" runat="server" Text="Add" CssClass="btn btn-primary" OnClick="btnAddOrUpdate_Click" />
                                                     <asp:Button ID="btnClear" runat="server" Text="Clear" CssClass="btn btn-primary" CausesValidation="false" OnClick="btnClear_Click" />
-                                                       
+                                                      
                                                 </div>
 
                                                 <div>
@@ -78,24 +73,20 @@
                                         </div>
 
                                         <div class="col-sm-6 col-md-8 col-lg-8 mobile-inputs">
-                                            <h4 class="sub-title">Category List</h4>
+                                            <h4 class="sub-title">Danh Sách Danh Mục</h4>
                                             <div class="card-block table-border-style">
-                                                <div class="table-responsive">
-
-                                                   
-
+                                                <div class="table-responsive">                                             
                                                     <asp:Repeater ID="rCategory" runat="server" OnItemCommand="rCategory_ItemCommand" OnItemDataBound="rCategory_ItemDataBound">
                                                         <HeaderTemplate>
                                                             <table class="table data-table-export table-hover nowrap">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th class="table-plus">Tên món</th>
+                                                                        <th class="table-plus">Danh Mục</th>
                                                                         <th>Hình ảnh</th>
                                                                         <th>IsActive</th>
                                                                         <th>Ngày tạo</th>
                                                                         <th class="datatable-nosort">Action</th>
                                                                     </tr>
-
                                                                 </thead>
                                                                 <tbody>
                                                         </HeaderTemplate>
@@ -114,13 +105,10 @@
                                                                     <i class="ti-pencil"></i>
                                                                     </asp:LinkButton>
                                                      <asp:LinkButton ID="lnkDelete" Text="Delete" style="background-color:red; font-size:20px; color:black" runat="server" CssClass="badge badge-primary" CommandArgument='<%#Eval("CategoryID") %>' CommandName="delete"
-                                                                        OnClientClick="return confirm('Bạn có muốn xóa loại sản phẩm này?');" >
+                                                                        OnClientClick="return confirm('Bạn có muốn xóa danh mục này?');" >
                                                                         <i class="ti-trash"></i>
-                                                                    </asp:LinkButton>
-                                                            
-                                                              
+                                                                    </asp:LinkButton>                                                                                                                 
                                                                 </td>
-
                                                             </tr>
                                                         </ItemTemplate>
                                                         <FooterTemplate>
@@ -142,5 +130,4 @@
             </div>
             <div>
              </div>
-
 </asp:Content>

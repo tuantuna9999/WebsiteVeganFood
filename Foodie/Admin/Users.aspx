@@ -31,7 +31,7 @@
 
 
                                         <div class="col-12 mobile-inputs">
-                                            <h4 class="sub-title">User List</h4>
+                                            <h4 class="sub-title">Danh Sách Sử Dụng</h4>
                                             <div class="card-block table-border-style">
                                                 <div class="table-responsive">
 
@@ -42,7 +42,7 @@
                                                             <table class="table data-table-export table-hover nowrap">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th class="table-plus">Tên món</th>
+                                                                        <th class="table-plus">STT</th>
                                                                         <th>Tên đầy đủ: </th>
                                                                         <th>Tên đăng nhập: </th>
                                                                         <th>Email</th>

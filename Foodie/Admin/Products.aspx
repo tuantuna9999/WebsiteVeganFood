@@ -139,12 +139,9 @@
                                         </div>
 
                                         <div class="col-sm-6 col-md-8 col-lg-8 mobile-inputs">
-                                            <h4 class="sub-title">Category List</h4>
+                                            <h4 class="sub-title">Danh Sách Sản Phẩm</h4>
                                             <div class="card-block table-border-style">
                                                 <div class="table-responsive">
-
-
-
                                                     <asp:Repeater ID="rProduct" runat="server" OnItemCommand="rProduct_ItemCommand" OnItemDataBound="rProduct_ItemDataBound">
                                                         <HeaderTemplate>
                                                             <table class="table data-table-export table-hover nowrap">
@@ -160,7 +157,6 @@
                                                                         <th>Ngày tạo</th>
                                                                         <th class="datatable-nosort">Action</th>
                                                                     </tr>
-
                                                                 </thead>
                                                                 <tbody>
                                                         </HeaderTemplate>
@@ -191,10 +187,7 @@
                                                                         OnClientClick="return confirm('Bạn có muốn xóa món ăn này?');">
                                                                         <i class="ti-trash"></i>
                                                                     </asp:LinkButton>
-
-
                                                                 </td>
-
                                                             </tr>
                                                         </ItemTemplate>
                                                         <FooterTemplate>

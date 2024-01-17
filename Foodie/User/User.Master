@@ -18,7 +18,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="../TemplateFiles/images/favicon.png" type="">
 
-  <title> Foodie </title>
+  <title> Vegan Food </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="../TemplateFiles/css/bootstrap.css" />
@@ -66,7 +66,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Foodie
+              Vegan Food
             </span>
           </a>
 
@@ -77,16 +77,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item">
-                <a class="nav-link" href="Default.aspx">Home </a>
+                <a class="nav-link" href="Default.aspx">Trang Chủ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Menu.aspx">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="About.aspx">About</a>
+                <a class="nav-link" href="About.aspx">Về Chúng Tôi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Contact.aspx">Contact</a>
+                <a class="nav-link" href="Contact.aspx">Liên Hệ</a>
               </li>
             </ul>
             <div class="user_option">
@@ -150,7 +150,7 @@
                   </g>
                 </svg>
                   <span class="badge rounded-pill bg-warning mb-4">
-                      <%Response.Write(Session["cartCount"]); %>
+                      <% Response.Write(Session["cartCount"]); %>
                   </span>
               </a>
               <div class="form-inline">
@@ -172,12 +172,9 @@
     <!-- slider section -->
    <asp:Panel ID="pnlSliderUC" runat="server"></asp:Panel>
     <!-- end slider section -->
-  </div>
-           
-       
+  </div>          
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        
+            </asp:ContentPlaceHolder>     
           <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
@@ -185,25 +182,25 @@
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
             <h4>
-              Contact Us
+              Liên Hệ Chúng Tôi
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Vị Trí
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Hotline +84 123456789
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  VeganFood@gmail.com
                 </span>
               </a>
             </div>
@@ -212,10 +209,10 @@
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Foodie
+                Vegan Food
             </a>
             <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+              Sử dụng thực phẩm thuần chay không những giúp ích cho cơ thể khỏe mạnh mà còn lan tỏa sự tích cực cho tinh thần của bạn đến với những người xung quanh.
             </p>
             <div class="footer_social">
               <a href="">
@@ -238,10 +235,10 @@
         </div>
         <div class="col-md-4 footer-col">
           <h4>
-            Opening Hours
+            Giờ Mở Cửa
           </h4>
           <p>
-            Everyday
+            Mỗi Ngày
           </p>
           <p>
             10.00 Am -10.00 Pm
@@ -250,10 +247,7 @@
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a><br><br>
-          &copy; <span id="displayYear"></span> Distributed By
-          <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+          &copy; <span id="displayYear"></span> All Rights Reserved By VeganFood
         </p>
       </div>
     </div>

@@ -18,17 +18,17 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                We Are Feane
+                Vegan Food
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              Nhờ lòng đam mê và tận tâm không ngừng, đội ngũ Loving Vegan đã tạo ra những sản phẩm thuần chay đáp ứng các tiêu chí về chất lượng và an toàn cho sức khỏe 
+              của khách hàng. Chúng tôi luôn đặt mục tiêu “Chăm sóc khách hàng như chính bản thân mình và những người thân yêu”, vì chúng tôi tin rằng một lối sống thuần 
+              chay là chìa khóa cho sức khỏe và hạnh phúc bền vững. Loving Vegan tin tưởng rằng, qua từng sản phẩm mà chúng tôi mang đến, Loving Vegan có thể thực sự 
+              chạm đến trái tim và tạo nên sự kết nối đặc biệt với mỗi khách hàng, như những người thân thương trong gia đình.
             </p>
             <a href="">
-              Read More
+              Đọc Thêm...
             </a>
           </div>
         </div>
