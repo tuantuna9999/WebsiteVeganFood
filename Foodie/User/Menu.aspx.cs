@@ -117,6 +117,23 @@ namespace Foodie.User
             }
 
         }
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            string searchKeyword = txtSearch.Text;
+            SearchProduct(searchKeyword);
+        }
+
+        private void SearchProduct(string keyword)
+        {
+            con = new SqlConnection(Connection.GetConnectionString());
+            cmd = new SqlCommand("SELECT * FROM Products WHERE Name LIKE '%' + @Keyword + '%'", con);
+            cmd.Parameters.AddWithValue("@Keyword", keyword);
+            sda = new SqlDataAdapter(cmd);
+            dt = new DataTable();
+            sda.Fill(dt);
+            rProducts.DataSource = dt;
+            rProducts.DataBind();
+        }
 
         //public string LowerCase(object obj)
         //{

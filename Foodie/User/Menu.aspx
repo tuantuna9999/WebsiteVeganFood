@@ -16,7 +16,12 @@
                    Menu 
                  </h2>
             </div>
-
+                         <div class="col-md-6">
+     <div class="search-container">
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" placeholder="Nhập tên món ăn!"></asp:TextBox>
+   </br> <asp:Button ID="btnSearch" runat="server" Text="Tìm kiếm" CssClass="btn btn-success rounded-pill pl-4 pr-4 text-white" OnClick="btnSearch_Click" />
+</div>
+                 </div>
             <ul class="filters_menu">
                 <li class="active" data-filter="*" data-id="0">All</li>
                 <asp:Repeater ID="rCategory" runat="server">
